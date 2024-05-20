@@ -2,78 +2,628 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- css  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://fontawesome.com/search?q=magnify%20glass&o=r&f=classic%2Cbrands" />
+    <link rel="stylesheet" href="media.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/2ee079c21e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Hockey</title>
 </head>
 
-<body>
+<body class="mb-0">
     <header>
+        <nav class="navbar fluid container navbar-expand-lg navbar-light ml-auto mr-auto">
+            <a class="navbar-brand" href="#">
+                <h3>Hockey<span class="orange">'</span>s</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- navbar -->
-        <nav class="d-flex justify-content-between align-items-center p-2">
-            <div class="nav-title">Hocky<span class="text-danger">'</span>s</div>
-            <div class="list d-flex gap-5 ">
-                <li class="text-danger">Home</li>
-                <li>About</li>
-                <li>Pages</li>
-                <li>Blog</li>
-                <li>Content</li>
-            </div>
-            <div class="d-flex gap-3 align-items-center">
-                <div class="w-8 "><i class="fa-solid fa-magnifying-glass w-40"></i></div>
-                <div><button class="btn btn-danger">Get Ticket</button></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mr-auto ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-danger">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <i class="fa-solid fa-magnifying-glass mr-3"></i>
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit">
+                        Get Ticket
+                    </button>
+                </form>
             </div>
         </nav>
 
-        <!-- Carousel -->
-        <section class="Carousel">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Carousel item  -->
+        <section class="slide container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./Images/1.png" class="d-block w-100" alt="...">
+                        <img class="d-block w-100" src="/Images/1.png" alt="First slide" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./Images/2.png" class="d-block w-100" alt="...">
+                        <img class="d-block w-100" src="/Images/2.png" alt="Second slide" />
                     </div>
                     <div class="carousel-item">
-                        <img src="./Images/3.png" class="d-block w-100" alt="...">
+                        <img class="d-block w-100" src="/Images/3.png" alt="Third slide" />
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                <div class="banner-text w-50 p-5 fluid rounded bg-dark text-light mt-3">
+                    <h3 class="mb-2">Meet All heroes from the field</h3>
+                    <p class="p-">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Tempora
+                        fugit, ut fuga accusantium animi dolorum.
+                    </p>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
         </section>
     </header>
-
     <main>
-        <div class="text-center m-10">
-            <h1>Professional Hockys Club</h1>
-            <h4>
-                Did amet consecter. Condimetum dignissim adipiscing aliquam turpis placeret <br>
-                dolor. Purus urna is sit nullam proin.
-            </h4>
-        </div>
+        <hr class="dash container mt-5" />
+        <section container>
+            <div class="text-center mt-3">
+                <h2>Professional Hockeys Club</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet incidunt laudantium? Nisi
+                    <br>
+                    quia labore recusandae eum ipsam eius rem placeat sit odit!
+                </p>
+            </div>
+            <hr class="dash container mt-3" />
+        </section>
+
+
+        <!-- progress  -->
+        <section class="p-container container mt-5">
+            <div class="row p-lg-5 p-3 gap-lg-0 gap-4">
+                <div class="p-card col-lg-3 col-12">
+                    <img class="mb-4" src="/Social/1.png" alt="" />
+                    <h3>Player Facility</h3>
+                    <p class="mb-4">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+                <div class="p-card col-lg-3 col-12">
+                    <img class="mb-4" src="/Social/2.png" alt="" />
+                    <h3>Experienced Coach</h3>
+                    <p class="mb-4">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+                <div class="p-card col-lg-3 col-12">
+                    <img class="mb-4" src="/Social/3.png" alt="" />
+                    <h3>Senior Player</h3>
+                    <p class="mb-4">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+                <div class="p-card col-lg-3 col-12">
+                    <img class="mb-4" src="/Social/4.png" alt="" />
+                    <h3>Training Ground</h3>
+                    <p class="mb-4">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr class="dash container mt-5" />
+        <section container>
+            <div class="text-center mt-3">
+                <h2>Program Sections</h2>
+                <p>
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat<br />
+                    dolor. Purus urna in sit nullam proin.
+                </p>
+            </div>
+            <hr class="dash container mt-3" />
+        </section>
+        <section class="container mt-4">
+            <div class="program-container p-2 first">
+                <div class="program p1">
+                    <div class="p-details">
+                        <h3>Junior Program</h3>
+                        <p>
+                            Program Section Dit amet consectetur. Condimentum dignissim
+                            adipiscing aliquam turpis placerat dolor. Purus urna in.
+                        </p>
+                        <button class="btn btn-danger">Register Now!</button>
+                    </div>
+                </div>
+                <div class="program p2">
+                    <div class="p-details">
+                        <h3>Junior Program</h3>
+                        <p>
+                            Program Section Dit amet consectetur. Condimentum dignissim
+                            adipiscing aliquam turpis placerat dolor. Purus urna in.
+                        </p>
+                        <button class="btn btn-danger">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="program p3 container second">
+                <div class="p-details">
+                    <h3>Professional Program</h3>
+                    <p>
+                        Program Section Dit amet consectetur. Condimentum dignissim
+                        adipiscing aliquam turpis placerat dolor. Purus urna in.
+                    </p>
+                    <button class="btn btn-danger">Register Now!</button>
+                </div>
+            </div>
+        </section>
+        <hr class="dash container mt-5" />
+        <section container>
+            <div class="text-center mt-3">
+                <h2>Our New Products</h2>
+                <p class="mb-2">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat<br />
+                    dolor. Purus urna in sit nullam proin.
+                </p>
+            </div>
+            <hr class="dash container mt-3" />
+        </section>
+        <!-- Product  -->
+        <section class="product-box container mt-5 mx-auto mb-4">
+            <div class="product d-flex gap-3 flex-lg-row flex-column align-items-center">
+                <div>
+                    <img src="/Images/5.png" alt="Shirt" />
+                </div>
+                <div class="product-details d-flex flex-column justify-content-between">
+                    <div class="rating d-flex gap-3">
+                        <div>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #ffd43b"></i> 5.0</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-eye"></i> 20</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>World Cup Flags Football</h5>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                    </div>
+                    <div class="price d-flex gap-3">
+                        <div>
+                            <span class="text-danger text-bold">Price - $22.00</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-truck"></i> Delivery Fee: Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product d-flex gap-3 flex-lg-row flex-column align-items-center">
+                <div>
+                    <img src="/Images/6.png" alt="Shirt" />
+                </div>
+                <div class="product-details d-flex flex-column justify-content-between">
+                    <div class="rating d-flex gap-3">
+                        <div>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #ffd43b"></i> 5.0</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-eye"></i> 20</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>World Cup Flags Football</h5>
+                        <p> Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                    </div>
+                    <div class="price d-flex gap-3">
+                        <div>
+                            <span class="text-danger">Price - $22.00</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-truck"></i> Delivery Fee: Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product d-flex gap-3 flex-lg-row flex-column align-items-center">
+                <div>
+                    <img src="/Images/7.png" alt="Shirt" />
+                </div>
+                <div class="product-details d-flex flex-column justify-content-between">
+                    <div class="rating d-flex gap-3">
+                        <div>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #ffd43b"></i> 5.0</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-eye"></i> 20</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Cap for hockey</h5>
+                        <p>Dolor sit ame consectetur. Ut urna diam quis sagittis.</p>
+                    </div>
+                    <div class="price d-flex gap-3">
+                        <div>
+                            <span class="text-danger">Price - $22.00</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-truck"></i> Delivery Fee: Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product d-flex gap-3 flex-lg-row flex-column align-items-center">
+                <div>
+                    <img src="/Images/8.png" alt="Shirt" />
+                </div>
+                <div class="product-details d-flex flex-column justify-content-between">
+                    <div class="rating d-flex gap-3">
+                        <div>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #ffd43b"></i> 5.0</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-eye"></i> 20</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Jersey for hockey</h5>
+                        <p>Dolor sit ame consectetur. Ut urna diam quis sagittis.</p>
+                    </div>
+                    <div class="price d-flex gap-3">
+                        <div>
+                            <span class="text-danger">Price - $22.00</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-truck"></i> Delivery Fee: Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product d-flex gap-3 flex-lg-row flex-column align-items-center">
+                <div>
+                    <img src="/Images/9.png" alt="Shirt" />
+                </div>
+                <div class="product-details d-flex flex-column justify-content-between">
+                    <div class="rating d-flex gap-3">
+                        <div>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #ffd43b"></i> 5.0</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-eye"></i> 20</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Helmet for hockey</h5>
+                        <p>Dolor sit ame consectetur. Ut urna diam quis sagittis.</p>
+                    </div>
+                    <div class="price d-flex gap-3">
+                        <div>
+                            <span class="text-danger">Price - $22.00</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-truck"></i> Delivery Fee: Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product d-flex gap-3 flex-lg-row flex-column align-items-center">
+                <div>
+                    <img src="/Images/10.png" alt="Shirt" />
+                </div>
+                <div class="product-details d-flex flex-column justify-content-between">
+                    <div class="rating d-flex gap-3">
+                        <div>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #ffd43b"></i> 5.0</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-eye"></i> 20</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-regular fa-heart"></i> 200</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>World Cup Football</h5>
+                        <p>Dolor sit ame consectetur. Ut urna diam quis sagittis.</p>
+                    </div>
+                    <div class="price d-flex gap-3">
+                        <div>
+                            <span class="text-danger">Price - $22.00</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-truck"></i> Delivery Fee: Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Client section  -->
+
+        </section>
+        <hr class="dash container mt-5" />
+        <section container>
+            <div class="text-center mt-3">
+                <h2>Clients Question</h2>
+                <p class="mb-2">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat<br />
+                    dolor. Purus urna in sit nullam proin.
+                </p>
+            </div>
+            <hr class="dash container mt-3" />
+        </section>
+        <section class="container d-flex justify-content-between mt-5">
+            <div class="photo">
+                <img class="qna" src="/Images/11.png" alt="QnA Image">
+            </div>
+            <div class="right-part">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Our Equipment
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br>sagittis
+                                    turpis in magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Hockey Training
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br>sagittis
+                                    turpis in magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Private Lessons
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br>sagittis
+                                    turpis in magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFore">
+                            <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFore" aria-expanded="true" aria-controls="collapseFore">
+                                Ski Touring
+                            </button>
+                        </h2>
+                        <div id="collapseFore" class="accordion-collapse collapse" aria-labelledby="headiFore"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br>sagittis
+                                    turpis in magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Our Equipment
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br>sagittis
+                                    turpis in magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                Booking
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim<br>sagittis
+                                    turpis in magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="dash container" />
+        <section container>
+            <div class="text-center mt-3">
+                <h2>Get In Touch</h2>
+                <p class="mb-2">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat<br />
+                    dolor. Purus urna in sit nullam proin.
+                </p>
+            </div>
+            <hr class="dash container mt-3" />
+            <section
+                class="container mt-5 get-touch d-flex flex-lg-row flex-column gap-lg-5 gap-5 mt-0 justify-content-center align-items-lg-center">
+                <div class="left-details d-flex flex-column gap-5 border left-box p-4">
+                    <div class="left-item l-1 p-3">
+                        <img class="mb-3" src="/Images/Group 1171275318.png" alt="Email Icon">
+                        <p>Email</p>
+                        <h5>hockeys@.com</h5>
+                    </div>
+                    <div class="left-item l-2 p-3">
+                        <img class="mb-3" src="/Images/Group 1171275317.png" alt="Phone Icon">
+                        <p>Phone</p>
+                        <h5 class="text-dark">(+62) 123-321-543</h5>
+                    </div>
+                    <div class="left-item l-3 p-3">
+                        <img class="mb-3" src="/Images/Group 1171275321.png" alt="Location Icon">
+                        <p>Location</p>
+                        <h5>77/1, East Solar Flare, Kamehameha</h5>
+                    </div>
+                </div>
+
+                <div class="right-details w-100 border left-box p-4">
+                    <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-3 mb-3">
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-3 mb-3">
+                        <div>
+                            <label for="exampleFormControlInput3" class="form-label">Phone Number</label>
+                            <input type="phone" class="form-control" id="exampleFormControlInput3" placeholder="Phone">
+                        </div>
+                        <div>
+                            <label for="exampleFormControlInput4" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-danger" type="button">Submit</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Social Media Tag  -->
+            <section class="container border p-4 mb-4 social">
+                <h2 class="text-center">Social Media</h2>
+                <div class="social-img d-flex justify-content-center gap-4">
+                    <img src="/Social/faceook.png" alt="">
+                    <img src="/Social/git.png" alt="">
+                    <img src="/Social/insta.png" alt="">
+                    <img src="/Social/twit.png" alt="">
+                </div>
+            </section>
+
     </main>
+    <footer>
+        <section
+            class="container p-5 d-flex flex-lg-row gap-lg-5 justify-content-lg-start justify-content-center flex-column gap-4 text-lg-start text-center ">
+            <div class="contact-footer">
+                <h3 class="footer-title">Get In Touch</h3>
+                <p class="footer-desc">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus
+                    urna in sit nullam
+                    proin.</p>
+                <p class="footer-desc"><i class="fa-regular fa-envelope" style="color: #ff4548;"></i> &nbsp
+                    hockeys@whoknowswhat.meh</p>
+                <p class="footer-desc"><i class="fa-solid fa-phone" style="color: #ff4548;"></i> &nbsp (+62) 123-456-789
+                </p>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            </div>
+            <div class="company-footer">
+                <h3 class="footer-title">Company</h3>
+                <div class="footer-links">
+                    <li class="footer-desc">About Us</li>
+                    <li class="footer-desc">Leadership</li>
+                    <li class="footer-desc">Careers</li>
+                    <li class="footer-desc">News & Articles</li>
+                    <li class="footer-desc">Legal Notice</li>
+                </div>
+            </div>
+            <div class="support-footer">
+                <h3 class="footer-title">Support</h3>
+                <div class="footer-links">
+                    <li class="footer-desc">Help Center</li>
+                    <li class="footer-desc">FAQ</li>
+                    <li class="footer-desc">Ticker Support</li>
+                    <li class="footer-desc">Contact Us</li>
+                </div>
+            </div>
+            <div class="services-footer">
+                <h3 class="footer-title">Services</h3>
+                <div class="footer-links">
+                    <li class="footer-desc">Academy</li>
+                    <li class="footer-desc">Group Lesson</li>
+                    <li class="footer-desc">Private Lesson</li>
+                    <li class="footer-desc">Hockey for Kids</li>
+                    <li class="footer-desc">Hockey for Adults</li>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
